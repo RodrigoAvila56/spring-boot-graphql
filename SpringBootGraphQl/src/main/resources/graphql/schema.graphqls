@@ -1,0 +1,70 @@
+#Query me sirve lo para hacer consultas
+type Query{
+
+    #Student
+    findStudentById(studentId: String) : Student
+    finAllStudents : [Student]
+
+    #Courses
+    findCourseById(courseId: String) : Course,
+    finAllCourse: [Course]
+
+}
+
+type Mutation{
+
+    #Students
+    createStudent(inputStudent: InputStudents!) : Student,
+    deleteStudentById(studentId: String) : String
+
+    #Courses
+    createCourse(inputCourse: InputCourse!): Course
+    deleteCourseById(courseId: String) : String
+}
+
+type Student {
+    id: ID,
+    name: String,
+    lastName: String,
+    age: Int
+    course: Course
+}
+
+input InputStudents {
+    name: String,
+    lastName: String,
+    age: Int,
+    courseId: String!
+}
+
+
+type Course {
+    id: ID,
+    name: String,
+    category: String,
+    teacher: String
+}
+
+input InputCourse{
+    name: String,
+    category: String,
+    teacher: String
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
