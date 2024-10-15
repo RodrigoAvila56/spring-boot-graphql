@@ -8,10 +8,15 @@ Este proyecto es una API desarrollada con Spring Boot e implementa GraphQL para 
 ## Built With
 
 -- Java 
+
 -- Spring Boot 
+
 -- GraphQL Spring Boot Starter
+
 -- Spring Data JPA (Persistencia)
---
+
+-- Base de datos Mysql
+
 -- Maven (Gestión de dependencias)
 
 
@@ -26,9 +31,7 @@ Este proyecto sigue una arquitectura en capas bien definida:
 
 --Course: Representa un curso, con atributos como id, name, y description.
 
-
 --Student: Representa a un estudiante, con atributos como id, firstName, y lastName.
-
 
 --Capa de Servicio: La lógica de negocio está encapsulada en la capa de servicio, lo que permite mantener un código modular y reutilizable.
 
@@ -38,7 +41,7 @@ Este proyecto sigue una arquitectura en capas bien definida:
 
 👤 **Author1**
 
-- GitHub: [@user](https://github.com/user)
+- GitHub:https://github.com/RodrigoAvila56
 - LinkedIn:https://www.linkedin.com/in/rodrigo-avila-76068729a/
 
 ## 🤝 Contributing
